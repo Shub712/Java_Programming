@@ -1,0 +1,43 @@
+abstract class Base
+{
+    public int i,j;
+
+    public int Addition(int A, int B)
+    {
+        return A+B;
+    }
+   abstract public int Substraction(int A, int B);
+
+}
+
+class Derived extends Base    //ERROR
+{
+  public int Substraction(int A, int B)
+  {
+    return A-B;
+  }
+
+  public int Multiplication(int A, int B)
+  {
+    return A*B;
+  }
+
+
+}
+
+
+
+class AbstractDemo2
+{
+    public static void main(String A[])
+    {
+        Base bp = new Derived();    
+        int iRet = 0;
+
+        iRet = bp.Addition(11, 10);
+    
+        iRet = bp.Substraction(11, 10);
+        //iRet = bp.Multiplication(11, 10);    //ERROR
+ 
+    }
+}
