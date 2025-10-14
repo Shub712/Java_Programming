@@ -1,4 +1,5 @@
-//Code to demonstratr thread scheduling
+
+//Code to demonstrat3 thread scheduling
 
 
 class Demo extends Thread
@@ -8,12 +9,12 @@ class Demo extends Thread
         int i = 0;
         try
         {
-        for (i = 1; i <=5; i++)
-        {
+          for (i = 1; i <=5; i++)
+          {
         
-          Thread .sleep(1000);
-          System.out.println("Inside run method of "+Thread.currentThread().getName());
-        }
+            Thread .sleep(1000);
+            System.out.println("Inside run method of "+Thread.currentThread().getName());
+          }
         }
         catch(InterruptedException iobj)
         {}

@@ -1,3 +1,5 @@
+
+
 class TablePrinter
 {
   public void PrintTable(int a)
