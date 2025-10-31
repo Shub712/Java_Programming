@@ -1,0 +1,58 @@
+
+///////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name = SumOfDigit
+//  Description = It is use count Sum of the digits
+//  Input =   Integer
+//  Output =  Integer
+//  Author =  Shubham Kiran Pawar
+//  Date =    31/10/2025
+//
+///////////////////////////////////////////////////////////////////////////////
+
+class Logic
+{
+    void SumofDigit(int iNo)
+    {
+        int iSum = 0, iRem = 0;
+
+        while(iNo>0)
+        {
+            iRem = iNo % 10;
+
+            iSum = iSum + iRem;
+
+            iNo = iNo / 10;
+        }
+
+        System.out.println(+iSum);
+    }
+}
+
+// Time Complexity = O(n)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function of a application
+//
+////////////////////////////////////////////////////////////////////////////
+
+
+class Program1
+{
+    public static void main(String A[])
+    {
+        Logic obj = new Logic();
+
+        obj.SumofDigit(1234);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+//
+//  Test Cases
+//  
+//  Input1 -   1234       Output -  10
+//  Input1 -   321        Output -  6
+//
+/////////////////////////////////////////////////////////////////////////////
